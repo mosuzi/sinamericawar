@@ -6,7 +6,7 @@
 
 - `pages/forces.mdx`：中美海、陆、空及战略打击力量公开资料底稿；
 - `pages/actors.mdx`：周边国家、欧洲、条约关系与经济底盘；
-- `pages/story/`：按序章、十四章与尾声分篇的完整小说正文；
+- `pages/story.mdx`、`pages/chapter-*.mdx` 与 `pages/epilogue.mdx`：与资料页同级平铺的完整小说正文；
 - `pages/about.mdx`：事实、虚构与写作边界说明。
 - `notes/outline.mdx`：不对外展示的创作大纲、全书时间线和人物弧线。
 - `notes/illustration-plan.md`：人物、装备、空间基准图及逐章插画的布景、机位和人物行为清单；最终图片位于 `public/illustrations/`。

@@ -18,8 +18,18 @@ export default function HomeLanding() {
       if (!stored) return
 
       const progress = JSON.parse(stored) as ReadingProgress
-      if (chapters.some((chapter) => chapter.href === progress.href)) {
-        setLastChapter(progress)
+      const href = progress.href
+        .replace(/^\/story\/(chapter-\d{2})$/, '/$1')
+        .replace(/^\/story\/epilogue$/, '/epilogue')
+      const chapter = chapters.find((item) => item.href === href)
+
+      if (chapter) {
+        const normalized = {
+          href,
+          label: `${chapter.kicker} · ${chapter.title}`,
+        }
+        setLastChapter(normalized)
+        window.localStorage.setItem(READING_PROGRESS_KEY, JSON.stringify(normalized))
       }
     } catch {
       // A damaged local preference should never block the book homepage.
