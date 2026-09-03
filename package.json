@@ -1,32 +1,38 @@
 {
-  "name": "nextra-docs-template",
+  "name": "sinamericawar",
   "version": "0.0.1",
-  "description": "Nextra docs template",
+  "packageManager": "pnpm@9.15.9",
+  "description": "2027：海峡尽头——以公开军力资料为背景的架空战争小说",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
-    "export": "next export"
+    "start": "next start"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/shuding/nextra-docs-template.git"
+    "url": "git+https://github.com/mosuzi/sinamericawar.git"
   },
-  "author": "Shu Ding <g@shud.in>",
+  "author": "mosuzi",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/shuding/nextra-docs-template/issues"
+    "url": "https://github.com/mosuzi/sinamericawar/issues"
   },
-  "homepage": "https://github.com/shuding/nextra-docs-template#readme",
+  "homepage": "https://github.com/mosuzi/sinamericawar#readme",
   "dependencies": {
-    "next": "^13.0.6",
-    "nextra": "latest",
-    "nextra-theme-docs": "latest",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "next": "15.5.24",
+    "nextra": "3.3.1",
+    "nextra-theme-docs": "3.3.1",
+    "react": "18.3.1",
+    "react-dom": "18.3.1"
   },
   "devDependencies": {
     "@types/node": "18.11.10",
     "typescript": "^4.9.3"
+  },
+  "pnpm": {
+    "overrides": {
+      "postcss": "8.5.23",
+      "@xmldom/xmldom": "0.9.12"
+    }
   }
 }

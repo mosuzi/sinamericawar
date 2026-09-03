@@ -1,23 +1,32 @@
-# Nextra Docs Template 
+# 2027：海峡尽头
 
-This is a template for creating documentation with [Nextra](https://nextra.site).
+以公开军力资料为背景的架空战争小说站点，使用 Next.js 与 Nextra 构建。
 
-[**Live Demo →**](https://nextra-docs-template.vercel.app)
+内容分为：
 
-[![](.github/screenshot.png)](https://nextra-docs-template.vercel.app)
+- `pages/forces.mdx`：中美海、陆、空及战略打击力量公开资料底稿；
+- `pages/actors.mdx`：周边国家、欧洲、条约关系与经济底盘；
+- `pages/outline.mdx`：重构后的全书时间线、人物弧线和参战因果；
+- `pages/story.mdx`：完整小说正文；
+- `pages/about.mdx`：事实、虚构与写作边界说明。
 
-## Quick Start
+## 本地运行
 
-Click the button to clone this repository and deploy it on Vercel:
+```bash
+pnpm install --frozen-lockfile
+pnpm dev
+```
 
-[![](https://vercel.com/button)](https://vercel.com/new/clone?s=https%3A%2F%2Fgithub.com%2Fshuding%2Fnextra-docs-template&showOptionalTeamCreation=false)
+本仓库保留了原有的 `basePath: /docs` 配置，本地访问地址为 `http://localhost:3000/docs`。
 
-## Local Development
+## 构建
 
-First, run `pnpm i` to install the dependencies.
+```bash
+pnpm build
+```
 
-Then, run `pnpm dev` to start the development server and visit localhost:3000.
+## Vercel 部署
 
-## License
+Vercel 会依据锁文件自动使用固定的 pnpm 版本并识别 Next.js。仓库根目录的 `vercel.json` 将域名根路径永久跳转到站点入口 `/docs`，无需覆盖构建命令或输出目录。
 
-This project is licensed under the MIT License.
+小说人物与战役进程均属虚构，不代表对现实战争的支持或预测。
