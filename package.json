@@ -2,7 +2,7 @@
   "name": "sinamericawar",
   "version": "0.0.1",
   "packageManager": "pnpm@9.15.9",
-  "description": "2027：海峡尽头——以公开军力资料为背景的架空战争小说",
+  "description": "海峡尽头：2027 中美战争——以公开军力资料为背景的架空战争小说",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
