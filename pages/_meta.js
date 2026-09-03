@@ -1,11 +1,18 @@
 export default {
   index: {
-    title: '序',
+    title: '首页',
     theme: {
+      layout: 'raw',
+      navbar: false,
+      sidebar: false,
       toc: false,
+      footer: false,
+      pagination: false,
     },
   },
-  story: '小说正文',
+  story: {
+    display: 'children',
+  },
   forces: '公开兵力',
   actors: '周边与域外',
   about: {
